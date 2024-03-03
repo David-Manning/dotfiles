@@ -1,0 +1,66 @@
+// Settings in here override those in "Default/Preferences.sublime-settings",
+// and are overridden in turn by syntax-specific settings.
+
+// Save to ~/.config/sublime-text/Packages/User/Preferences.sublime-settings
+
+// Ignore all these packages - I don't use any of them
+{
+	"ignored_packages": [
+		"ActionScript",
+		"AppleScript",
+		"ASP",
+		"Batch File",
+		"C#",
+		"C++",
+		"Clojure",
+		"CSS",
+		"D",
+		"DTD",
+		"Diff",
+		"Erlang",
+		"Git Formats",
+		"Go",
+		"Graphviz",
+		"Groovy",
+		"Haskell",
+		"Java",
+		"JavaScript",
+		"Lisp",
+		"Lua",
+		"Makefile",
+		"MATLAB",
+		"Objective-C",
+		"OCaml",
+		"Pascal",
+		"Perl",
+		"PHP",
+		"Rails",
+		"Scala",
+		"Textile",
+		"TCL",
+		"Vintage",
+		"XSL"
+	],
+	// Adds whitespace up to the first open bracket when indenting. Requires
+	// auto_indent to be enabled.
+	"indent_to_bracket": true,
+	
+	// The number of spaces a tab is considered equal to
+	"tab_size": 4,
+	"auto_indent": true,
+	"index_files": true,
+
+	// Rulers
+	"rulers": [80, 160]
+
+
+
+}
+
+// Packages to install:
+// SublimeLinter (linter tool - does not add language support)
+// SublimeLinter-rubocop (adds language for Ruby)
+// SublimeLinter-pycodestyle (adds language for Python)
+// Stan (adds syntax highlighting for Stan)
+// MarkdownLivePreview (Shows Markdown in the window as you type)
+// terminus (adds a terminal emulator at the bottom of the screen)
