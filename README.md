@@ -6,4 +6,5 @@ Go through each file in order:
 1) Edit new_fedora_install.sh so it has the right version numbers (esp. Zoom)
 2) Run new_fedora_install.sh
 3) Make manual changes
-4) Copy Sublime settings to the location in the comments
+4) Copy RStudio settings file to ~/.config/rstudio/rstudio-prefs.json
+5) Copy Sublime settings to the location in the comments
