@@ -8,16 +8,13 @@ sudo rpm -Uvh http://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-
 sudo rpm -Uvh http://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm # RPM Non-Free Repo
 sudo dnf copr enable taw/joplin # Joplin repo
 sudo dnf copr enable iucar/cran # CRAN repo
-sudo dnf install R-CoprManager # Makes CRAN work
+sudo dnf install R-CoprManager # Makes CRAN work via terminal
 sudo dnf upgrade --refresh
 sudo dnf upgrade
 
 # Install from RPM
 sudo dnf install -y https://dbeaver.io/files/dbeaver-ce-latest-stable.x86_64.rpm # DBeaver
-sudo dnf install -y https://zoom.us/client/5.17.5.2543/zoom_x86_64.rpm # Zoom - update this URL
-
-# Install from tarball
-
+sudo dnf install -y https://zoom.us/client/5.17.5.2543/zoom_x86_64.rpm # Zoom - TODO: update this URL
 
 # Install languages
 sudo dnf install -y git R ruby ruby-devel julia mysql-devel mysql-server
