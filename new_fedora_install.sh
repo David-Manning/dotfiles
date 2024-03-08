@@ -59,6 +59,9 @@ sudo dnf remove -y konversation # Don't use IRC
 sudo dnf remove -y kmousetool # Auto clicker
 sudo dnf remove -y krdc # Remote desktop client
 sudo dnf remove -y kwalletmanager5 # Don't use a wallet manager
+sudo dnf remove -y krfb # Remote desktop tool
+sudo dnf remove -y kcharselect # Lets you select a character
+sudo dnf remove -y kfind # File finder - use bash or Dolphin
 
 
 echo "All done"
