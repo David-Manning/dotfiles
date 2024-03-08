@@ -1,3 +1,10 @@
+#! /bin/bash
+
+# Fedora post-install script
+
+# Search for the phrase TODO before running - some things need version numbers specified
+# Watch out for things that are commented out - I am testing using Sublime text to do almost everything
+
 # Refresh everything
 sudo dnf upgrade --refresh
 sudo dnf upgrade
@@ -6,20 +13,23 @@ sudo dnf upgrade
 sudo dnf install 'dnf-command(copr)'
 sudo rpm -Uvh http://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm # RPM Free Repo
 sudo rpm -Uvh http://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm # RPM Non-Free Repo
-sudo dnf copr enable taw/joplin # Joplin repo
+# sudo dnf copr enable taw/joplin # Joplin repo # Commented out because I am experimenting with using Sublime for everything
 sudo dnf copr enable iucar/cran # CRAN repo
 sudo dnf install R-CoprManager # Makes CRAN work via terminal
 sudo dnf upgrade --refresh
 sudo dnf upgrade
 
 # Install from RPM
-sudo dnf install -y https://dbeaver.io/files/dbeaver-ce-latest-stable.x86_64.rpm # DBeaver
+# sudo dnf install -y https://dbeaver.io/files/dbeaver-ce-latest-stable.x86_64.rpm # DBeaver # Commented out to test using Sublime as a database client
 sudo dnf install -y https://zoom.us/client/5.17.5.2543/zoom_x86_64.rpm # Zoom - TODO: update this URL
 
 # Install languages
-sudo dnf install -y git R ruby ruby-devel julia mysql-devel mysql-server
+sudo dnf install -y git R ruby ruby-devel julia mysql-devel mysql-server texlive
 
-# Install R packages
+# Install LaTeX packages
+sudo dnf install -y texlive-booktabs texlive-bibtex texlive-tikz texlive-hyperref texlive-listings texlive-amsmath texlive-enumitem 
+
+# Install R packages - some of these are probably duplicates via dependencies but it is pretty much everything I use
 sudo dnf install -y R-CRAN-tidyverse R-CRAN-SHELF R-CRAN-brms R-CRAN-zoo R-CRAN-parallely R-CRAN-readbulk R-CRAN-data.table R-CRAN-DATAstudio R-CRAN-FakeR R-CRAN-BACCO R-CRAN-bayesplot R-CRAN-calibrator R-CRAN-caret R-CRAN-cricketdata R-CRAN-cricketr R-CRAN-MySQL R-CRAN-elo R-CRAN-lubridate R-CRAN loo R-CRAN-lme4 R-CRAN-parallel R-CRAN-readr R-CRAN-readxl R-CRAN-extraDistr R-CRAN-rbayesianoptimization R-CRAN-xgboost R-CRAN-tidybayes R-CRAN-forecast R-CRAN-reticulate R-CRAN-leaflet
 
 # Install python packages - note that Discord.py is installed before py-cord 
@@ -30,7 +40,8 @@ pip install wheel Discord.py py-cord pandas gensim spacy nltk requests asyncio p
 gem install nokogiri discordrb csv daru gnuplotrb distribution sciruby cmdstan rumale json tzinfo rubyzip parallel jekyll mysql2 rubocop
 
 # Install packages from repo
-sudo dnf install -y vlc thunderbird neofetch putty joplin gparted libreoffice libreoffice-langpack-de clementine Discord steam
+sudo dnf install -y vlc thunderbird neofetch putty gparted libreoffice libreoffice-langpack-de clementine Discord steam
+# sudo dnf intall -y joplin 
 
 # Install codecs
 sudo dnf install gstreamer1-plugins-{bad-\*,good-\*,base} gstreamer1-plugin-openh264 gstreamer1-libav --exclude=gstreamer1-plugins-bad-free-devel
@@ -62,6 +73,11 @@ sudo dnf remove -y kwalletmanager5 # Don't use a wallet manager
 sudo dnf remove -y krfb # Remote desktop tool
 sudo dnf remove -y kcharselect # Lets you select a character
 sudo dnf remove -y kfind # File finder - use bash or Dolphin
+sudo dnf remove -y akgregator # RSS aggregator
+sudo dnf remove -y kgpg # Encryption
+
+# Set up KDE Background
+
 
 
 echo "All done"
