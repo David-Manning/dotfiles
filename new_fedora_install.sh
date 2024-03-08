@@ -58,6 +58,7 @@ sudo dnf remove -y korganizer # Don't use an organisation program
 sudo dnf remove -y konversation # Don't use IRC
 sudo dnf remove -y kmousetool # Auto clicker
 sudo dnf remove -y krdc # Remote desktop client
+sudo dnf remove -y kwalletmanager5 # Don't use a wallet manager
 
 
 echo "All done"
