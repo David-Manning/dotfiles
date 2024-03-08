@@ -3,7 +3,9 @@ This is a place for files which help set up my computer. I tend to do a clean re
 
 ## Installation 
 Run `git clone https://github.com/David-Manning/computer-setup ./Documents/setup/` in the terminal 
-Open `./Documents/setup/new_fedora_install.sh` and update the version number for Zoom
+
+Open `./Documents/setup/new_fedora_install.sh` and update the version number for Zoom and others 
+
 Run `./Documents/setup/new_fedora_install.sh`
 
 
