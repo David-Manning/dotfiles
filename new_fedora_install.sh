@@ -43,12 +43,22 @@ sudo dnf config-manager --add-repo https://download.sublimetext.com/rpm/stable/x
 sudo dnf install -y sublime-text
 
 # Remove software
-sudo dnf remove -y kmail -- Replace with Thunderbird
-sudo dnf remove -y dragonplayer -- Replace with VLC
-sudo dnf remove -y kwrite -- Replace with Sublime
-sudo dnf remove -y kmines -- No games
-sudo dnf remove -y kmahjongg -- No games
-sudo dnf remove -y kpat -- No games 
+sudo dnf remove -y kmail # Replace with Thunderbird
+sudo dnf remove -y dragonplayer # Replace with VLC
+sudo dnf remove -y kwrite # Replace with Sublime
+sudo dnf remove -y kmines # No games
+sudo dnf remove -y kmahjongg #' No games
+sudo dnf remove -y kpat # No games 
+sudo dnf remove -y akonadi-import-wizard # This imports data into KMail etc, but I don't use it
+sudo dnf remove -y kmag # Screen magnifier
+sudo dnf remove -y kaddressbook # I don't use an address book
+sudo dnf remove -y kcalc # No need for a calculator
+sudo dnf remove -y kmouth # Text to speech
+sudo dnf remove -y korganizer # Don't use an organisation program
+sudo dnf remove -y konversation # Don't use IRC
+sudo dnf remove -y kmousetool # Auto clicker
+sudo dnf remove -y krdc # Remote desktop client
+
 
 echo "All done"
 
