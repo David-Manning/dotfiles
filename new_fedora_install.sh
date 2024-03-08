@@ -24,7 +24,7 @@ sudo dnf install -y R-CRAN-tidyverse R-CRAN-SHELF R-CRAN-brms R-CRAN-zoo R-CRAN-
 
 # Install python packages - note that Discord.py is installed before py-cord 
 pip install --upgrade pip
-pip install wheel Discord.py py-cord pandas gensim spacy nltk requests asyncio python-dotenv importlib_resources pymysql pillow==9.0.1 tabulate sqlalchemy bertopic pandas numpy boto3
+pip install wheel Discord.py py-cord pandas gensim spacy nltk requests asyncio python-dotenv importlib_resources pymysql pillow==9.0.1 tabulate sqlalchemy bertopic pandas numpy boto3 scikit-learn xgboost
 
 # Install ruby gems
 gem install nokogiri discordrb csv daru gnuplotrb distribution sciruby cmdstan rumale json tzinfo rubyzip parallel jekyll mysql2 rubocop
