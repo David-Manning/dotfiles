@@ -87,6 +87,7 @@
 	sudo dnf remove -y kfind # File finder - use bash or Dolphin
 	sudo dnf remove -y akgregator # RSS aggregator
 	sudo dnf remove -y kgpg # Encryption
+ 	sudo dnf remove -y ark # Use 7zip instead
 
 # Clone whole repo to load dotfiles
 	git clone https://github.com/David-Manning/computer-setup.git /home/david/repo/
