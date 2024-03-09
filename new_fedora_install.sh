@@ -35,7 +35,7 @@
 # Install software
 
 	# Install languages
-		sudo dnf install -y git R ruby ruby-devel julia mysql-devel mysql-server texlive
+		sudo dnf install -y git R ruby ruby-devel julia mysql-devel mysql-server texlive p7zip
 
 	# Install LaTeX packages
 		sudo dnf install -y texlive-booktabs texlive-bibtex texlive-tikz texlive-hyperref texlive-listings texlive-amsmath texlive-enumitem 
