@@ -113,10 +113,10 @@
 
 # Set up SABnzbd
 	wget https://github.com/sabnzbd/sabnzbd/releases/download/4.2.2/SABnzbd-4.2.2-src.tar.gz
- 	tar -xzf SABnzbd-4.2.2.tar.gz
-  	pip3 install -r ./Downloads/SABnzbd-4.2.2/requirements.txt
-    Xvfb :99
-	python3 ./Downloads/SABnzbd-4.2.2/SABnzbd.py
-	
+	tar -xzf SABnzbd-4.2.2-src.tar.gz
+	cd SABnzbd-4.2.2
+	pip3 install -r requirements.txt -q
+	python3 SABnzbd.py
+	cd ./
 
 echo "All done - reboot is recommended"
