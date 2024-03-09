@@ -35,7 +35,7 @@
 # Install software
 
 	# Install languages
-		sudo dnf install -y git R ruby ruby-devel julia mysql-devel mysql-server texlive p7zip
+		sudo dnf install -y git R ruby ruby-devel julia mysql-devel mysql-server texlive p7zip kwooty
 
 	# Install LaTeX packages
 		sudo dnf install -y texlive-booktabs texlive-bibtex texlive-tikz texlive-hyperref texlive-listings texlive-amsmath texlive-enumitem texlive-tipauni texlive-times
@@ -65,7 +65,10 @@
 	# Install Sublime Text
 		sudo dnf install -y sublime-text
 		# LaTeXTools
-  
+
+  	# Install utilities
+		sudo dnf install -y par2cmdline
+
 # Remove bloatware
 	sudo dnf remove -y kmail # Replace with Thunderbird
 	sudo dnf remove -y dragonplayer # Replace with VLC
@@ -110,13 +113,5 @@
 # Set up printer
 	sudo lpadmin -p Davids_Printer -E -v "dnssd://Brother%20HL-L3230CDW%20series._ipp._tcp.local/?uuid=e3248000-80ce-11db-8000-b422008c4450" -m everywhere -D "David's Printer" -L "David's Study"
 	lpoptions -p Davids_Printer -o media=A4 -o print-color-mode=color -o sides=two-sided-long-edge -o print-quality=5 -o print-scaling=auto
-
-# Set up SABnzbd
-	wget https://github.com/sabnzbd/sabnzbd/releases/download/4.2.2/SABnzbd-4.2.2-src.tar.gz
-	tar -xzf SABnzbd-4.2.2-src.tar.gz
-	cd SABnzbd-4.2.2
-	pip3 install -r requirements.txt -q
-	python3 SABnzbd.py
-	cd ./
 
 echo "All done - reboot is recommended"
