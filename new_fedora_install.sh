@@ -38,7 +38,7 @@
 		sudo dnf install -y git R ruby ruby-devel julia mysql-devel mysql-server texlive p7zip
 
 	# Install LaTeX packages
-		sudo dnf install -y texlive-booktabs texlive-bibtex texlive-tikz texlive-hyperref texlive-listings texlive-amsmath texlive-enumitem 
+		sudo dnf install -y texlive-booktabs texlive-bibtex texlive-tikz texlive-hyperref texlive-listings texlive-amsmath texlive-enumitem texlive-tipauni texlive-times
 
 	# Install R packages - some of these are probably duplicates via dependencies but it is pretty much everything I use
 		sudo dnf install -y R-CRAN-tidyverse R-CRAN-SHELF R-CRAN-brms R-CRAN-zoo R-CRAN-parallely R-CRAN-readbulk R-CRAN-data.table R-CRAN-DATAstudio R-CRAN-FakeR R-CRAN-BACCO R-CRAN-bayesplot R-CRAN-calibrator R-CRAN-caret R-CRAN-cricketdata R-CRAN-cricketr R-CRAN-MySQL R-CRAN-elo R-CRAN-lubridate R-CRAN loo R-CRAN-lme4 R-CRAN-parallel R-CRAN-readr R-CRAN-readxl R-CRAN-extraDistr R-CRAN-rbayesianoptimization R-CRAN-xgboost R-CRAN-tidybayes R-CRAN-forecast R-CRAN-reticulate R-CRAN-leaflet
