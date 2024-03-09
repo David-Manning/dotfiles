@@ -49,6 +49,8 @@
 	"tab_size": 4,
 	"auto_indent": true,
 	"index_files": true,
+"translate_tabs_to_spaces": false, 
+"trim_trailing_whitespace_on_save": "all", 
 
 	// Rulers
 	"rulers": [80, 160]
