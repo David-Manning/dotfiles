@@ -58,8 +58,8 @@
 		# sudo dnf install -y joplin 
 
 	# Install codecs
-		sudo dnf install gstreamer1-plugins-{bad-\*,good-\*,base} gstreamer1-plugin-openh264 gstreamer1-libav --exclude=gstreamer1-plugins-bad-free-devel
-		sudo dnf install lame\* --exclude=lame-devel
+		sudo dnf install -y gstreamer1-plugins-{bad-\*,good-\*,base} gstreamer1-plugin-openh264 gstreamer1-libav --exclude=gstreamer1-plugins-bad-free-devel xorg-x11-server-Xvfb
+		sudo dnf install -y lame\* --exclude=lame-devel
 		sudo dnf group upgrade --with-optional Multimedia
 
 	# Install Sublime Text
@@ -111,5 +111,12 @@
 	sudo lpadmin -p Davids_Printer -E -v "dnssd://Brother%20HL-L3230CDW%20series._ipp._tcp.local/?uuid=e3248000-80ce-11db-8000-b422008c4450" -m everywhere -D "David's Printer" -L "David's Study"
 	lpoptions -p Davids_Printer -o media=A4 -o print-color-mode=color -o sides=two-sided-long-edge -o print-quality=5 -o print-scaling=auto
 
+# Set up SABnzbd
+	wget https://github.com/sabnzbd/sabnzbd/releases/download/4.2.2/SABnzbd-4.2.2-src.tar.gz
+ 	tar -xzf SABnzbd-4.2.2.tar.gz
+  	pip3 install -r ./Downloads/SABnzbd-4.2.2/requirements.txt
+    Xvfb :99
+	python3 ./Downloads/SABnzbd-4.2.2/SABnzbd.py
+	
 
 echo "All done - reboot is recommended"
