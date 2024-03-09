@@ -13,3 +13,5 @@ Spelling: Main dictionary language: English (United Kingdom)
 
 ## Sublime
 Copy the settings file on this repo
+
+https://packagecontrol.io/packages/A%20File%20Icon
