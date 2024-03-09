@@ -89,6 +89,7 @@
 	sudo dnf remove -y kgpg # Encryption
 	sudo dnf remove -y ark # Use 7zip instead
 	sudo dnf remove -y elisaplayer # Audio player - use Clementine
+ 	sudo dnf remove -y plasma-welcome # Setup for Plasma
 
 # Clone whole repo to load dotfiles
 	git clone https://github.com/David-Manning/computer-setup.git /home/david/repo/
