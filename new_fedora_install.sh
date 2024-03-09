@@ -64,7 +64,8 @@
 
 	# Install Sublime Text
 		sudo dnf install -y sublime-text
-
+		# LaTeXTools
+  
 # Remove bloatware
 	sudo dnf remove -y kmail # Replace with Thunderbird
 	sudo dnf remove -y dragonplayer # Replace with VLC
@@ -90,7 +91,8 @@
 	sudo dnf remove -y ark # Use 7zip instead
 	sudo dnf remove -y elisaplayer # Audio player - use Clementine
  	sudo dnf remove -y plasma-welcome # Setup for Plasma
-
+	sudo dnf remove -y qbittorrent # Don't use torrents
+ 
 # Clone whole repo to load dotfiles
 	git clone https://github.com/David-Manning/computer-setup.git /home/david/repo/
 
