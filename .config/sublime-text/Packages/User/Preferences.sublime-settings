@@ -41,23 +41,24 @@
 		"Vintage",
 		"XSL"
 	],
-	// Adds whitespace up to the first open bracket when indenting. Requires
-	// auto_indent to be enabled.
-	"indent_to_bracket": true,
-	
-	// The number of spaces a tab is considered equal to
+
+	// Tabs
 	"tab_size": 4,
 	"auto_indent": true,
+	"indent_to_bracket": true,
 	"index_files": true,
-"translate_tabs_to_spaces": false, 
-"trim_trailing_whitespace_on_save": "all", 
+	"translate_tabs_to_spaces": false, 
+	"trim_trailing_whitespace_on_save": "all", 
 
 	// Rulers
 	"rulers": [80, 160]
 
+	// Font and theme
 	"font_size": 10,
-	"dictionary": "Packages/Language - English/en_GB.dic",
 	"theme": "Default Dark.sublime-theme",
+
+	// Dictionary
+	"dictionary": "Packages/Language - English/en_GB.dic",
 
 
 }
