@@ -21,9 +21,6 @@
 		sudo rpm -v --import https://download.sublimetext.com/sublimehq-rpm-pub.gpg
 		sudo dnf config-manager --add-repo https://download.sublimetext.com/rpm/stable/x86_64/sublime-text.repo
 
-	# Joplin - commented out because I now use Sublime
-		# sudo dnf copr enable taw/joplin
-
 	# CRAN repo
 		sudo dnf copr enable iucar/cran
 		sudo dnf install R-CoprManager # Makes CRAN work via terminal
@@ -54,8 +51,6 @@
 	# Install packages from repo
 		sudo dnf install -y vlc thunderbird neofetch putty gparted libreoffice libreoffice-langpack-de clementine Discord steam
 		sudo dnf install -y https://zoom.us/client/5.17.5.2543/zoom_x86_64.rpm # Zoom - TODO: update this URL
-		# sudo dnf install -y https://dbeaver.io/files/dbeaver-ce-latest-stable.x86_64.rpm # DBeaver # Commented out to test using Sublime as a database client
-		# sudo dnf install -y joplin 
 
 	# Install codecs
 		sudo dnf install -y gstreamer1-plugins-{bad-\*,good-\*,base} gstreamer1-plugin-openh264 gstreamer1-libav --exclude=gstreamer1-plugins-bad-free-devel xorg-x11-server-Xvfb
