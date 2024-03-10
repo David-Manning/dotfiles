@@ -1,16 +1,16 @@
-# About this repo
-This is a place for dotfiles and installation scripts. I tend to do a clean reinstall of my OS every few months so this helps it stay the same each time.
+## About this repo
+This is a place for my dotfiles and installation scripts. I tend to do a clean reinstall of my OS every few months so this helps it stay the same each time.
 
 ## Installation 
-Run `git clone https://github.com/David-Manning/computer-setup ./Documents/setup/` in the terminal 
+Fork the repo
 
-Open `./Documents/setup/new_fedora_install.sh` and update the version number for Zoom and others 
+Update version numbers (especially Zoom)
 
-Run `./Documents/setup/new_fedora_install.sh`
+Tweak the other settings to your preference
 
+Run in the terminal (update the account name if you forked it):
 
-## How to
-Go through each file in order:
-1) Edit new_fedora_install.sh so it has the right version numbers (esp. Zoom)
-2) Run new_fedora_install.sh
-3) Make manual changes 
+```bash
+git clone https://github.com/David-Manning/computer-setup ./Documents/setup/
+./Documents/setup/bootstrap.sh
+```
