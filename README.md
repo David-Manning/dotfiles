@@ -1,6 +1,8 @@
 ## About this repo
 These are my dotfiles and installation scripts. I tend to do a clean reinstall of my OS every few months so this helps it stay the same each time. These settings suit me, but they may not suit you. Feel free to fork and change. The files may not work if your system does not use Fedora KDE.
 
+Forest Background taken from [here](https://www.reddit.com/r/WidescreenWallpaper/comments/123mxld/forest_saxon_switzerland_germary_5160x2160/)
+
 ## Installation 
 1) Fork the repo
 
